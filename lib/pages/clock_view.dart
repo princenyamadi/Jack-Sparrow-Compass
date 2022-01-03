@@ -4,6 +4,8 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 class ClockView extends StatefulWidget {
+  const ClockView({Key? key}) : super(key: key);
+
   @override
   _ClockViewState createState() => _ClockViewState();
 }
@@ -77,7 +79,7 @@ class ClockPainter extends CustomPainter {
       ..strokeWidth = 12;
 
     var dashBrush = Paint()
-      ..color = Color(0xFFEAECFF)
+      ..color = const Color(0xFFEAECFF)
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round
       ..strokeWidth = 1;
